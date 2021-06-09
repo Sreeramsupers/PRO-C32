@@ -32,8 +32,10 @@ function draw() {
 
     // write code to display time in correct format here
     if(hour>=12){ 
+        textSize(50)
+        fill("Darkred")
         text("Time: "+ hour%12 + " PM", 50,100); 
-    }else if(hour === 0){
+        }else if(hour === 0){
             text("Time: 12 AM",50,100)
         }else{
             text("Time: "+ hour%12 + " AM", 50,100); 
